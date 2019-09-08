@@ -2,20 +2,22 @@
     display: flex;
 
     .bannerNav {
-        background-color: #2A70A0;
+        // background-color: #2A70A0;
+        background-color: #2d5089;
         width: 100vw;
+        box-shadow: inset 0px -1px 5px 5px rgba(48, 44, 44, 0.486);
 
         .bannerNavLinks {
             display: flex;
             justify-content: space-between;
             height: 70px;
             width: fill;
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             border-radius:10px;
             margin: 0px 15px 5px 15px;
 
             a {
-                transition: 0.5s;
+                transition: 0.25s;
                 width: 125px;
                 text-align: center;
                 align-self: flex-end;
@@ -25,6 +27,11 @@
             a:hover {
                box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.5); 
                font-size: 1.2em;
+            }
+
+            img {
+                width: 100px;
+                height: 75px;
             }
             
         }

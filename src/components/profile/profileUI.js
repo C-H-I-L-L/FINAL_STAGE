@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PlayVid from './playVid';
+import Courage from '../../../static/assets/courage.png';
 
 
 class ProfileUI extends Component {
@@ -6,8 +8,8 @@ class ProfileUI extends Component {
     return (
       <div class='rawr'>
           <div class='left-side'>
-            <h3>about me goes over here</h3>
-            <hr />
+            <img src={Courage} alt='Courage the Cowardly Dog' />
+            {/* <hr /> */}
 
             <p> Favorite genre to play: Djent Metal </p>
 
@@ -25,17 +27,17 @@ class ProfileUI extends Component {
 
           <div class='middle-side'>
 
-          <div class ='content'>
-            <p>video goes here</p>
-            {/* <renderVideo /> */}
-          </div>
+            <div class ='content'>
+              <h2>Music</h2>
+              <PlayVid />
+            </div>
 
           </div>
 
           <div class='right-side'>
 
-            <p>oh no, we're not in bikini bottom anymore</p>
-            <hr />
+            <h3>Contact</h3>
+            {/* <hr /> */}
           </div>
       </div>
     );
